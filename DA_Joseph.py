@@ -23,7 +23,7 @@ headers = {
     'User-Agent' : 'Mobile'
 }
 #Testing the modified headers on an external website
-url2 = 'http://httpbin.org/headers'
+url2 = 'http://172.18.58.80/headers.php'
 rh = requests.get(url2, headers=headers)
 print(rh.text)
 
