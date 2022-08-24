@@ -23,8 +23,10 @@ headers = {
     'User-Agent' : 'Mobile'
 }
 # Test it on an external site
-rh = requests.get(url, headers=headers)
+url2 = 'http://172.18.58.80/nantes'
+rh = requests.get(url2, headers=headers)
 print(rh.text)
+
 
 import scrapy
 class NewSpider(scrapy.Spider):
