@@ -22,8 +22,8 @@ print("**********")
 headers = {
     'User-Agent' : 'Mobile'
 }
-# Test it on an external site
-url2 = 'http://172.18.58.80/nantes'
+#Testing the modified headers on an external website
+url2 = 'http://httpbin.org/headers'
 rh = requests.get(url2, headers=headers)
 print(rh.text)
 
@@ -48,7 +48,9 @@ class NewSpider(scrapy.Spider):
                     callback=self.parse
                 )
 
-                #test
+
+
+
 
 
 

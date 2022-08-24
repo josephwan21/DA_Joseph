@@ -1,12 +1,12 @@
 import unittest
 import DA_Joseph
+import requests
 
 class ApplicationTest(unittest.TestCase):
-    def statuscode_test(self):
-        import requests
+    def test_statuscode(self):
         # Set the target webpage
-        url = 'http://172.18.58.80/nantes’
-        r = requests.get(url)
+        DA_Joseph.url = "http://172.18.58.80/nantes"
+        r = requests.get(DA_Joseph.url)
         # This will get the full page
         print(r.text)
         print("Status code:")
