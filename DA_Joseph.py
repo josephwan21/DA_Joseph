@@ -9,7 +9,7 @@ r = requests.get(url)
 # This will get the full page
 print(r.text)
 
-# --Part 2 -- Obtaining status code of the webpage to check whether the performed GET request was successful``
+# --Part 2 -- Obtaining status code of the webpage to check whether the performed GET request was successful--
 
 print("Status code:")
 print("\t *", r.status_code)
